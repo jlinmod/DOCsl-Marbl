@@ -1165,7 +1165,7 @@ CISO_DO13C_prod :
 CISO_DO13Cr_prod :
    dependencies :
       ciso_on : .true.
-   longname : DO13C Production
+   longname : DO13Cr Production
    units : mmol/m^3/s
    vertical_grid : layer_avg
    frequency : medium
