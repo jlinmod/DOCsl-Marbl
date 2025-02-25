@@ -199,8 +199,7 @@ contains
          H2CO3              => interior_tendency_share%H2CO3_fields,         & ! INPUT carbonic acid
          DOCtot_remin       => interior_tendency_share%DOCtot_remin_fields,  & ! INPUT remineralization of DOCtot (mmol C/m^3/sec)
          DOCtot_loc         => interior_tendency_share%DOCtot_loc_fields,    & ! INPUT local copy of model DOCtot
-         DOC_loc         => interior_tendency_share%DOC_loc_fields,    & ! INPUT local copy of model DOCsl
-         DOCr_loc         => interior_tendency_share%DOCr_loc_fields,    & ! INPUT local copy of model DOCr
+
 
 
          DO13Ctot_loc       => tracer_local(marbl_tracer_indices%DO13Ctot_ind,:),  & ! local copy of model DO14Ctot
@@ -311,17 +310,17 @@ contains
           R14C_DOCtot(k) = c0
        end if
 
-       if (DOC_loc(k) > c0) then
-          R13C_DOC(k) = DO13C_loc(k) / DOC_loc(k)
-          R14C_DOC(k) = DO14C_loc(k) / DOC_loc(k)
+       if (DOCtot_loc(k) > c0) then
+          R13C_DOC(k) = DO13C_loc(k) / DOCtot_loc(k)
+          R14C_DOC(k) = DO14C_loc(k) / DOCtot_loc(k)
        else
           R13C_DOC(k) = c0
           R14C_DOC(k) = c0
        end if
 
-       if (DOCr_loc(k) > c0) then
-          R13C_DOCr(k) = DO13Cr_loc(k) / DOCr_loc(k)
-          R14C_DOCr(k) = DO14Cr_loc(k) / DOCr_loc(k)
+       if (DOCtot_loc(k) > c0) then
+          R13C_DOCr(k) = DO13Cr_loc(k) / DOCtot_loc(k)
+          R14C_DOCr(k) = DO14Cr_loc(k) / DOCtot_loc(k)
        else
           R13C_DOCr(k) = c0
           R14C_DOCr(k) = c0
