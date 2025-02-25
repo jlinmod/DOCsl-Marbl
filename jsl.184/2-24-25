@@ -1,0 +1,11 @@
+jsl.183 had error below
+
+
+
+  202 |          DOC_loc         => interior_tendency_share%DOC_loc_fields,    & ! INPUT local copy of model DOCsl
+      |                           1
+Error: Invalid association target at (1)
+
+
+remove DOC_loc , DOCr_loc
+
