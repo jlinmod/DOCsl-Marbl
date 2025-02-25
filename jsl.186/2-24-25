@@ -1,0 +1,34 @@
+error in jsl.185
+
+ Done setting default values!
+ NetCDF: Variable not found
+ NetCDF: Variable not found
+------------------------------------------------------------------------
+ 
+POP aborting...
+ Error in getting varid for netCDF field DO13C
+ 
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+ 
+POP aborting...
+ Error in getting varid for netCDF field DO13C
+ 
+------------------------------------------------------------------------
+ NetCDF: Variable not found
+ NetCDF: Variable not found
+------------------------------------------------------------------------
+ 
+POP aborting...
+ Error in getting varid for netCDF field DO13C
+ 
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+ 
+use user_nl_pop_ciso14 
+
+20 yr average jsl.012 1531_1550 yr CISO in IC file, use all variables, DOCtot from OG, DO13Ctot set as -21, DO14Ctot=-500, DO13C and DO13Cr=DO13Ctot*0.5, DO14C and DO14Cr= DO14Ctot*0.5
+
+•	init_ecosys_init_file = '/mnt/lustre/letscher/jsl1063/initcond/cisodocsl/jsl180_ciso_ecosys_jan_IC_gx3v7_20180308.nc'
+
+use cp user_nl_pop_ciso14 ${SCRIPT_DIR_BASE}/${CASE}/user_nl_pop in cesm_start for jsl.186
