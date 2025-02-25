@@ -1,0 +1,7 @@
+/mnt/lustre/letscher/jsl1063/jsl.180/bld/ocn/source/marbl_ciso_interior_tendency_mod.F90:201:27:
+
+  201 |          DOC_remin       => interior_tendency_share%DOC_remin_fields,  & ! INPUT remineralization of DOCsl (mmol C/m^3/sec)
+      |                           1
+Error: Invalid association target at (1)
+
+will remove all DOC_remin code
