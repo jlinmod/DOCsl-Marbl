@@ -537,11 +537,15 @@ contains
             (zootot_loss_doc(k) + zootot_graze_doc(k))*R13C_zoototC(k) + &
             sum((auto_loss_doc(:,k) + auto_graze_doc(:,k)) * R13C_autotroph(:,k),dim=1)
 
-       DO13C_prod(k) = (c1-DOCprod_refract) * ( &
+!change DO13C_prod(k) = (c1-DOCprod_refract) to 1-0.01 = 0.09
+
+       DO13C_prod(k) = (0.09_r8) * ( &
             (zootot_loss_doc(k) + zootot_graze_doc(k))*R13C_zoototC(k) + &
             sum((auto_loss_doc(:,k) + auto_graze_doc(:,k)) * R13C_autotroph(:,k),dim=1))
 
-       DO13Cr_prod(k) = DOCprod_refract * ( &
+!change DO13Cr_prod(k) = DOCprod_refract to 0.01
+
+       DO13Cr_prod(k) = (0.01_r8) * ( &
             (zootot_loss_doc(k) + zootot_graze_doc(k))*R13C_zoototC(k) + &
             sum((auto_loss_doc(:,k) + auto_graze_doc(:,k)) * R13C_autotroph(:,k),dim=1))
 
@@ -549,11 +553,15 @@ contains
             (zootot_loss_doc(k) + zootot_graze_doc(k))*R14C_zoototC(k) + &
             sum((auto_loss_doc(:,k) + auto_graze_doc(:,k)) * R14C_autotroph(:,k),dim=1)
 
-       DO14C_prod(k) = (c1 - DOCprod_refract) * ( &
+!change DO14C_prod(k) = (c1 - DOCprod_refract) to 1-0.01 = 0.09
+
+       DO14C_prod(k) = (0.09_r8) * ( &
             (zootot_loss_doc(k) + zootot_graze_doc(k))*R14C_zoototC(k) + &
             sum((auto_loss_doc(:,k) + auto_graze_doc(:,k)) * R14C_autotroph(:,k),dim=1))
 
-       DO14Cr_prod(k) = DOCprod_refract * ( &
+!change DO14Cr_prod(k) = DOCprod_refract to 0.01
+
+       DO14Cr_prod(k) = (0.01_r8) * ( &
             (zootot_loss_doc(k) + zootot_graze_doc(k))*R14C_zoototC(k) + &
             sum((auto_loss_doc(:,k) + auto_graze_doc(:,k)) * R14C_autotroph(:,k),dim=1))
 
