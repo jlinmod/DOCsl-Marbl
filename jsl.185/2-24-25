@@ -1,0 +1,10 @@
+error below from jsl.184
+
+/mnt/lustre/letscher/jsl1063/jsl.184/bld/ocn/source/marbl_ciso_interior_tendency_mod.F90:540:42:
+
+  540 |        DO13C_prod(k) = (c1-DOCprod_refract) * ( &
+      |                                          1
+Error: Symbol ‘docprod_refract’ at (1) has no IMPLICIT type
+
+
+will delete docprod_refract for jsl.185
