@@ -198,7 +198,6 @@ contains
          HCO3               => interior_tendency_share%HCO3_fields,          & ! INPUT bicarbonate ion
          H2CO3              => interior_tendency_share%H2CO3_fields,         & ! INPUT carbonic acid
          DOCtot_remin       => interior_tendency_share%DOCtot_remin_fields,  & ! INPUT remineralization of DOCtot (mmol C/m^3/sec)
-         DOCr_remin       => interior_tendency_share%DOCr_remin_fields,  & ! INPUT remineralization of DOCr (mmol C/m^3/sec)
          DOCtot_loc         => interior_tendency_share%DOCtot_loc_fields,    & ! INPUT local copy of model DOCtot
          DOC_loc         => interior_tendency_share%DOC_loc_fields,    & ! INPUT local copy of model DOCsl
          DOCr_loc         => interior_tendency_share%DOCr_loc_fields,    & ! INPUT local copy of model DOCr
@@ -561,10 +560,10 @@ contains
 
        DO13Ctot_remin(k) = DOCtot_remin(k) * R13C_DOCtot(k)
        DO13C_remin(k) = DOCtot_remin(k) * R13C_DOC(k)
-       DO13Cr_remin(k) = DOCr_remin(k) * R13C_DOCr(k)
+       DO13Cr_remin(k) = DOCtot_remin(k) * R13C_DOCr(k)
        DO14Ctot_remin(k) = DOCtot_remin(k) * R14C_DOCtot(k)
        DO14C_remin(k) = DOCtot_remin(k) * R14C_DOC(k)
-       DO14Cr_remin(k) = DOCr_remin(k) * R14C_DOCr(k)
+       DO14Cr_remin(k) = DOCtot_remin(k) * R14C_DOCr(k)
 
        !-----------------------------------------------------------------------
        !  large detritus 13C and 14C
