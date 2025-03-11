@@ -110,8 +110,12 @@ contains
 
          di13c_ind          => marbl_tracer_indices%di13c_ind                  , &
          do13ctot_ind       => marbl_tracer_indices%do13ctot_ind               , &
+         do13c_ind       => marbl_tracer_indices%do13c_ind               , &
+         do13cr_ind       => marbl_tracer_indices%do13cr_ind               , &
          di14c_ind          => marbl_tracer_indices%di14c_ind                  , &
          do14ctot_ind       => marbl_tracer_indices%do14ctot_ind               , &
+         do14c_ind       => marbl_tracer_indices%do14c_ind               , &
+         do14cr_ind       => marbl_tracer_indices%do14cr_ind               , &
          ciso_ind_beg       => marbl_tracer_indices%ciso%ind_beg               , &
          ciso_ind_end       => marbl_tracer_indices%ciso%ind_end                 &
          )
