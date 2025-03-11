@@ -1,0 +1,15 @@
+Use new ic file user_nl_pop_ciso14
+init_ecosys_init_file = '/mnt/lustre/letscher/jsl1063/initcond/cisodocsl/jsl180_ciso_ecosys_jan_IC_gx3v7_20180308.nc'
+
+
+with the updated marbl_ciso_surface_flux_mod.F90 from jsl187
+
+cesm log error - get floating point exception.
+
+################################
+[cn-0013:241744:0:241744] Caught signal 8 (Floating point exception: floating-point divide by zero)
+
+Program received signal SIGFPE: Floating-point exception - erroneous arithmetic operation.
+
+################################
+
